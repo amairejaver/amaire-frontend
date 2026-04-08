@@ -810,6 +810,25 @@
                                                     <!-- <input id="phone" name="phone" type="text" required><br> -->
                                                 </div>
                                             </div>
+                                            <div class="col-md-12">
+                                                <div class="input-item ltn__custom-icon">
+                                                    <select class="modelo-interes-select" name="modelo_interes"
+                                                        required>
+                                                        <option value="" selected disabled>Selecciona el modelo de tu
+                                                            interés</option>
+                                                        <option value="Modelo A - $3,050,000">Modelo A - $3,050,000
+                                                        </option>
+                                                        <option value="Modelo B - $4,181,000">Modelo B - $4,181,000
+                                                        </option>
+                                                        <option value="Modelo C - $4,836,000">Modelo C - $4,836,000
+                                                        </option>
+                                                        <option value="Modelo D - $5,726,000">Modelo D - $5,726,000
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <textarea id="00N3l00000Q7A4q" name="00N3l00000Q7A4q" rows="1"
+                                                    style="display:none;"></textarea>
+                                            </div>
                                         </div>
 
                                         <div class="d-flex row">
@@ -927,7 +946,8 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo A</h2>
+                                            <h2 class="">Modelo A - <span class="price">$3,050,000</span></h2>
+
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>1 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -1089,7 +1109,7 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo B</h2>
+                                            <h2 class="">Modelo B - <span class="price">$4,181,000</span></h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>2 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -1216,7 +1236,7 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo C</h2>
+                                            <h2 class="">Modelo C - <span class="price">$4,836,000</span></h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>2 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -1389,7 +1409,7 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo D</h2>
+                                            <h2 class="">Modelo D - <span class="price">$5,726,000</span></h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>3 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -2106,6 +2126,20 @@
                                         <input id="phone" name="phone" type="text" required placeholder="Teléfono">
                                         <!-- <input id="phone" name="phone" type="text" required><br> -->
                                     </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-item ltn__custom-icon">
+                                        <select class="modelo-interes-select" name="modelo_interes" required>
+                                            <option value="" selected disabled>Selecciona el modelo de tu interés
+                                            </option>
+                                            <option value="Modelo A - $3,050,000">Modelo A - $3,050,000</option>
+                                            <option value="Modelo B - $4,181,000">Modelo B - $4,181,000</option>
+                                            <option value="Modelo C - $4,836,000">Modelo C - $4,836,000</option>
+                                            <option value="Modelo D - $5,726,000">Modelo D - $5,726,000</option>
+                                        </select>
+                                    </div>
+                                    <textarea id="00N3l00000Q7A4q" name="00N3l00000Q7A4q" rows="1"
+                                        style="display:none;"></textarea>
                                 </div>
                             </div>
 
@@ -2909,6 +2943,25 @@
                                                     <!-- <input id="phone" name="phone" type="text" required><br> -->
                                                 </div>
                                             </div>
+                                            <div class="col-md-12">
+                                                <div class="input-item ltn__custom-icon">
+                                                    <select class="modelo-interes-select" name="modelo_interes"
+                                                        required>
+                                                        <option value="" selected disabled>Selecciona el modelo de tu
+                                                            interés</option>
+                                                        <option value="Modelo A - $3,050,000">Modelo A - $3,050,000
+                                                        </option>
+                                                        <option value="Modelo B - $4,181,000">Modelo B - $4,181,000
+                                                        </option>
+                                                        <option value="Modelo C - $4,836,000">Modelo C - $4,836,000
+                                                        </option>
+                                                        <option value="Modelo D - $5,726,000">Modelo D - $5,726,000
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <textarea id="00N3l00000Q7A4q" name="00N3l00000Q7A4q" rows="1"
+                                                    style="display:none;"></textarea>
+                                            </div>
                                         </div>
 
                                         <div class="d-flex row">
@@ -3571,6 +3624,8 @@
                 }
             });
 
+            ensureModelSelectVisibility();
+
             // Registrar event listeners de los formularios DESPUÉS de que reCAPTCHA esté listo
             registerFormListeners();
         }
@@ -3578,6 +3633,21 @@
         function getGclidFromUrl () {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get('gclid') || '';
+        }
+
+        function ensureModelSelectVisibility () {
+            const modelSelects = document.querySelectorAll('select.modelo-interes-select');
+            modelSelects.forEach((select) => {
+                const possibleNiceSelect = select.nextElementSibling;
+                if (possibleNiceSelect && possibleNiceSelect.classList.contains('nice-select')) {
+                    possibleNiceSelect.remove();
+                }
+
+                select.style.display = 'block';
+                select.style.visibility = 'visible';
+                select.style.opacity = '1';
+                select.style.pointerEvents = 'auto';
+            });
         }
 
         function registerFormListeners () {
@@ -3619,6 +3689,7 @@
                         const first_name = formData.get('first_name')?.trim() || '';
                         const email = formData.get('email')?.trim() || '';
                         const phone = formData.get('phone')?.trim() || '';
+                        const modeloInteres = formData.get('modelo_interes')?.trim() || '';
                         const aviso = formData.has('aviso');
 
                         // Validaciones front extra
@@ -3650,16 +3721,25 @@
                             return;
                         }
 
+                        if (!modeloInteres) {
+                            messageDiv.classList.add('alert', 'alert-danger');
+                            messageDiv.textContent = 'Selecciona el modelo de tu interés.';
+                            return;
+                        }
+
                         if (!aviso) {
                             messageDiv.classList.add('alert', 'alert-danger');
                             messageDiv.textContent = 'Debes aceptar el aviso de privacidad.';
                             return;
                         }
 
+                        formData.set('00N3l00000Q7A4q', `Modelo de interés: ${modeloInteres}`);
+
                         const data = {
                             first_name,
                             email,
                             phone,
+                            '00N3l00000Q7A4q': formData.get('00N3l00000Q7A4q'),
                             aviso,
                             '00N3l00000Q7A54': formData.get('00N3l00000Q7A54'),
                             '00N3l00000Q7A57': formData.get('00N3l00000Q7A57'),

@@ -1004,8 +1004,27 @@ textarea::-webkit-input-placeholder {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
-textarea:focus {
+textarea:focus,
+select.modelo-interes-select:focus {
     border-color: var(--ltn__secondary-color);
+}
+
+select.modelo-interes-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border: 2px solid var(--border-color-9);
+    background-color: var(--white);
+    font-size: 16px;
+    color: var(--ltn__paragraph-color);
 }
 
 input[type="password"] {
@@ -1070,12 +1089,16 @@ button:focus {
 
 .input-item.ltn__custom-icon::before {
     position: absolute;
-    top: 35%;
+    top: 22px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 20px;
     color: var(--lnd-main-color);
+}
+
+.price {
+    color: var(--lnd-secondary-color);
 }
 
 .input-item-name.ltn__custom-icon::before {
