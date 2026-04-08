@@ -781,7 +781,7 @@
 
 
                                     </p>
-                                    <p class="text-color-white fs-5 lh-base fw-bold">*Se aplican restricciones. Precios
+                                    <p class="text-color-white  lh-base fw-bold">*Se aplican restricciones. Precios
                                         vigentes al <span data-vigencia-fecha></span>.</p>
                                     <div class="btn-wrapper animated  ltn__animation-pulse2">
                                         <a type="button" class="btn popup-btn popup-btn-tour w-70"
@@ -3399,25 +3399,25 @@
                 <div class="col-3">
                     <a href="#" class="sticky-menu-item sticky-modelo-btn active" data-target="modelo1">
                         <div class="sticky-menu-icon">1</div>
-                        <span>Primer Nivel</span>
+                        <span>Modelo A</span>
                     </a>
                 </div>
                 <div class="col-3">
                     <a href="#" class="sticky-menu-item sticky-modelo-btn" data-target="modelo2">
                         <div class="sticky-menu-icon">2</div>
-                        <span>Segundo Nivel</span>
+                        <span>Modelo B</span>
                     </a>
                 </div>
                 <div class="col-3">
                     <a href="#" class="sticky-menu-item sticky-modelo-btn" data-target="modelo3">
                         <div class="sticky-menu-icon">3</div>
-                        <span>Tercer Nivel</span>
+                        <span>Modelo C</span>
                     </a>
                 </div>
                 <div class="col-3">
                     <a href="#" class="sticky-menu-item sticky-modelo-btn" data-target="modelo4">
                         <div class="sticky-menu-icon">4</div>
-                        <span>Cuarto Nivel</span>
+                        <span>Modelo D</span>
                     </a>
                 </div>
             </div>
@@ -3868,7 +3868,7 @@
 
             const formatCurrency = new Intl.NumberFormat('es-MX');
             const formatPrice = function (amount) {
-                return '$' + formatCurrency.format(amount);
+                return '$' + formatCurrency.format(amount) + "*";
             };
 
             document.querySelectorAll('[data-model-price]').forEach(function (element) {
