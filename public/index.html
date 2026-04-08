@@ -755,10 +755,10 @@
 
                                             <ul>
                                                 <li class=" text-white fs-5 ">Modelo A -
-                                                    <span class="font-bold">$3,050,000</span>
+                                                    <span class="font-bold" data-model-price="A"></span>
                                                 </li>
-                                                <li class="text-white fs-5 ">Modelo B - <span
-                                                        class="font-bold">$4,181,000</span>
+                                                <li class="text-white fs-5 ">Modelo B - <span class="font-bold"
+                                                        data-model-price="B"></span>
                                                 </li>
                                             </ul>
 
@@ -767,10 +767,10 @@
                                             <ul>
 
                                                 <li class=" text-white fs-5 ">Modelo C -
-                                                    <span class="font-bold">$4,836,000</span>
+                                                    <span class="font-bold" data-model-price="C"></span>
                                                 </li>
-                                                <li class="text-white fs-5 ">Modelo D - <span
-                                                        class="font-bold">$5,726,000</span>
+                                                <li class="text-white fs-5 ">Modelo D - <span class="font-bold"
+                                                        data-model-price="D"></span>
                                                 </li>
                                             </ul>
 
@@ -781,9 +781,8 @@
 
 
                                     </p>
-                                    <!-- <p class="text-color-white fs-5 lh-base fw-bold">Lo exclusivo y único también se
-                                        llama
-                                        Hogar.</p> -->
+                                    <p class="text-color-white fs-5 lh-base fw-bold">*Se aplican restricciones. Precios
+                                        vigentes al <span data-vigencia-fecha></span>.</p>
                                     <div class="btn-wrapper animated  ltn__animation-pulse2">
                                         <a type="button" class="btn popup-btn popup-btn-tour w-70"
                                             href="#titulo-modelos">
@@ -848,13 +847,13 @@
                                                         required>
                                                         <option value="" selected disabled>Selecciona el modelo de tu
                                                             interés</option>
-                                                        <option value="Modelo A - $3,050,000">Modelo A - $3,050,000
+                                                        <option data-model-label="A" value="Modelo A">Modelo A
                                                         </option>
-                                                        <option value="Modelo B - $4,181,000">Modelo B - $4,181,000
+                                                        <option data-model-label="B" value="Modelo B">Modelo B
                                                         </option>
-                                                        <option value="Modelo C - $4,836,000">Modelo C - $4,836,000
+                                                        <option data-model-label="C" value="Modelo C">Modelo C
                                                         </option>
-                                                        <option value="Modelo D - $5,726,000">Modelo D - $5,726,000
+                                                        <option data-model-label="D" value="Modelo D">Modelo D
                                                         </option>
                                                     </select>
                                                 </div>
@@ -940,13 +939,13 @@
             <!-- Botones (Móvil) -->
             <div class="modelos-mobile d-md-none mb-3">
                 <div class="row g-2">
-                    <div class="col-6"><button class="btn w-100 modelo-btn active" data-target="modelo1">Primer
-                            Nivel</button></div>
-                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo2">Segundo Nivel</button>
+                    <div class="col-6"><button class="btn w-100 modelo-btn active" data-target="modelo1">Modelo
+                            A</button></div>
+                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo2">Modelo B</button>
                     </div>
-                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo3">Tercer Nivel</button>
+                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo3">Modelo C</button>
                     </div>
-                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo4">Cuarto Nivel</button>
+                    <div class="col-6"><button class="btn w-100 modelo-btn" data-target="modelo4">Modelo D</button>
                     </div>
                 </div>
             </div>
@@ -978,7 +977,8 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo A - <span class="price">$3,050,000</span></h2>
+                                            <h2 class="">Modelo A - <span class="price" data-model-price="A"></span>
+                                            </h2>
 
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>1 <i class="flaticon-bed"></i></span>
@@ -1141,7 +1141,8 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo B - <span class="price">$4,181,000</span></h2>
+                                            <h2 class="">Modelo B - <span class="price" data-model-price="B"></span>
+                                            </h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>2 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -1268,7 +1269,8 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo C - <span class="price">$4,836,000</span></h2>
+                                            <h2 class="">Modelo C - <span class="price" data-model-price="C"></span>
+                                            </h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>2 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -1441,7 +1443,8 @@
                                 <div class="ltn__gallery-slider-test-area mb-60">
                                     <div class="container">
                                         <div class="ltn__section-title-2--- text-center ">
-                                            <h2 class="">Modelo D - <span class="price">$5,726,000</span></h2>
+                                            <h2 class="">Modelo D - <span class="price" data-model-price="D"></span>
+                                            </h2>
                                             <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                                                 <li><span>3 <i class="flaticon-bed"></i></span>
                                                     Habitaciones
@@ -2164,10 +2167,10 @@
                                         <select class="modelo-interes-select" name="modelo_interes" required>
                                             <option value="" selected disabled>Selecciona el modelo de tu interés
                                             </option>
-                                            <option value="Modelo A - $3,050,000">Modelo A - $3,050,000</option>
-                                            <option value="Modelo B - $4,181,000">Modelo B - $4,181,000</option>
-                                            <option value="Modelo C - $4,836,000">Modelo C - $4,836,000</option>
-                                            <option value="Modelo D - $5,726,000">Modelo D - $5,726,000</option>
+                                            <option data-model-label="A" value="Modelo A">Modelo A</option>
+                                            <option data-model-label="B" value="Modelo B">Modelo B</option>
+                                            <option data-model-label="C" value="Modelo C">Modelo C</option>
+                                            <option data-model-label="D" value="Modelo D">Modelo D</option>
                                         </select>
                                     </div>
                                     <textarea id="00N3l00000Q7A4q" name="00N3l00000Q7A4q" rows="1"
@@ -2981,13 +2984,13 @@
                                                         required>
                                                         <option value="" selected disabled>Selecciona el modelo de tu
                                                             interés</option>
-                                                        <option value="Modelo A - $3,050,000">Modelo A - $3,050,000
+                                                        <option data-model-label="A" value="Modelo A">Modelo A
                                                         </option>
-                                                        <option value="Modelo B - $4,181,000">Modelo B - $4,181,000
+                                                        <option data-model-label="B" value="Modelo B">Modelo B
                                                         </option>
-                                                        <option value="Modelo C - $4,836,000">Modelo C - $4,836,000
+                                                        <option data-model-label="C" value="Modelo C">Modelo C
                                                         </option>
-                                                        <option value="Modelo D - $5,726,000">Modelo D - $5,726,000
+                                                        <option data-model-label="D" value="Modelo D">Modelo D
                                                         </option>
                                                     </select>
                                                 </div>
@@ -3852,6 +3855,53 @@
                 });
             });
         }
+    </script>
+
+    <script>
+        (function () {
+            const modelPrices = {
+                A: 3050000,
+                B: 4181000,
+                C: 4836000,
+                D: 5726000
+            };
+
+            const formatCurrency = new Intl.NumberFormat('es-MX');
+            const formatPrice = function (amount) {
+                return '$' + formatCurrency.format(amount);
+            };
+
+            document.querySelectorAll('[data-model-price]').forEach(function (element) {
+                const model = element.getAttribute('data-model-price');
+                if (modelPrices[model]) {
+                    element.textContent = formatPrice(modelPrices[model]);
+                }
+            });
+
+            document.querySelectorAll('[data-model-label]').forEach(function (element) {
+                const model = element.getAttribute('data-model-label');
+                if (!modelPrices[model]) {
+                    return;
+                }
+
+                const label = 'Modelo ' + model + ' - ' + formatPrice(modelPrices[model]);
+                element.textContent = label;
+                if (element.tagName === 'OPTION') {
+                    element.value = label;
+                }
+            });
+
+            const today = new Date();
+            const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+            const day = lastDayOfMonth.getDate();
+            const month = lastDayOfMonth.toLocaleString('es-MX', { month: 'long' });
+            const year = lastDayOfMonth.getFullYear();
+            const dynamicDate = day + ' de ' + month + ' del ' + year;
+
+            document.querySelectorAll('[data-vigencia-fecha]').forEach(function (element) {
+                element.textContent = dynamicDate;
+            });
+        })();
     </script>
 
     <!-- Script para funciones de los botones popup -->
