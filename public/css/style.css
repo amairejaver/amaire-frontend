@@ -1097,9 +1097,6 @@ button:focus {
     color: var(--lnd-main-color);
 }
 
-.price {
-    color: var(--lnd-secondary-color);
-}
 
 .input-item-name.ltn__custom-icon::before {
     content: "\f007";
@@ -19348,7 +19345,20 @@ input.cart-plus-minus-box {
 }
 
 /* ----------------------------------------------------
-    END
+    CUSTOM
 ---------------------------------------------------- */
+
+.font-bold {
+    font-weight: 700;
+}
+
+.price {
+    color: var(--lnd-secondary-color);
+}
+
+.highlighted {
+    color: #fbad50;
+    text-shadow: 1px 1px black;
+}
 
 /*# sourceMappingURL=style.css.map */
