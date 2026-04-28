@@ -38,6 +38,13 @@
             background-color: #F2F6F7 !important;
         }
 
+        .bg-hero {
+            background-image: url('./img/hero/hero.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%
+        }
+
         .video-bg {
             position: relative;
             overflow: hidden;
@@ -203,10 +210,11 @@
         }
 
         /* Ocultar cuando no hay material de promoción  */
-        /* #floating-btn,
+        #floating-btn,
         #floating-panel {
-            display: block !important;
-        } */
+            display: none !important;
+        }
+
         @media (max-width: 991px) {
 
             #floating-btn,
@@ -215,9 +223,13 @@
             }
         }
 
-        .logo-javer {
-            max-width: 200px;
+        .logo-amaire {
+            max-width: 350px;
             height: auto;
+        }
+
+        .pleca-javer {
+            display: none;
         }
 
         .logo-altai {
@@ -715,9 +727,9 @@
                 class="ltn__slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn__slide-animation-active">
 
                 <!-- HTML5 VIDEO -->
-                <video autoplay muted loop playsinline id="myVideo">
+                <!-- <video autoplay muted loop playsinline id="myVideo">
                     <source src="./video/portada.mp4" type="video/mp4">
-                </video>
+                </video> -->
 
                 <!-- YouTube VIDEO -->
                 <!-- <div class="ltn__youtube-video-background">
@@ -727,24 +739,24 @@
             </div> -->
 
                 <!-- ltn__slide-item -->
-                <div class="ltn__slide-item ltn__slide-item-2 ltn__slide-item-7 bg-image--- bg-overlay-theme-black-30"
-                    data-bs-bg="img/slider/41.jpg">
+                <div class="  bg-hero ">
                     <div class="ltn__slide-item-inner text-center py-5">
                         <div class="container">
                             <div class="row align-items-center">
-                                <div class="col-6 text-start">
-                                    <img src="./img/logo.svg" alt="Logo Izquierda" class="img-fluid logo-javer ">
+                                <div class="col-12 ">
+                                    <img src="./img/logo.png" alt="Logo amaire" class="img-fluid logo-amaire w-100 ">
                                 </div>
-                                <div class="col-6 text-end">
+                                <!-- <div class="col-6 text-end">
                                     <img src="./img/logo-amaire.webp" alt="Logo Derecha" class="img-fluid logo-altai ">
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="row mt-40">
-                                <div class="col-12 text-start  col-sm-12 col-lg-7 mb-5 mb-lg-0">
-                                    <h1 class="section-title  text-color-white">Amairé
-                                        <!-- <span
-                                                    class="ltn__secondary-color-3">Perfect</span> Home -->
+                                <div
+                                    class="col-12 text-start  col-sm-12 col-lg-7 mb-5 mb-lg-0 hidden-xs d-none d-md-block">
+                                    <!--        <h1 class="section-title  text-color-white">Amairé
+                                       <span
+                                                    class="ltn__secondary-color-3">Perfect</span> Home
                                     </h1>
 
                                     <p class="text-color-white fs-5 lh-base text-justify">Amairé es un excelente
@@ -786,14 +798,14 @@
 
 
 
-                                    </p>
+                                    </p> 
                                     <p class="text-color-white  lh-base fw-bold">*Se aplican restricciones. Precios
                                         vigentes al <span data-vigencia-fecha></span>.</p>
                                     <div class="btn-wrapper animated  ltn__animation-pulse2">
                                         <a type="button" class="btn popup-btn popup-btn-tour w-70 btn-mobile-w100"
                                             href="#titulo-modelos">
                                             VER INFORMACIÓN <i class="fa-solid fa-arrow-down"></i></a>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="col-12 col-sm-12 col-lg-5 ">
                                     <!-- <h1 class="text-color-white">Déjanos tu mensaje</h1>
@@ -805,7 +817,7 @@
                                     </script> -->
 
                                     <div id="form-message-1" style=" margin-bottom: 1em;"></div>
-                                    <form id="lead-form-1">
+                                    <form id="lead-form-1" class="overlay">
                                         <input type="hidden" name="oid" value="00Do0000000b6Io">
                                         <input type="hidden" name="captcha_settings"
                                             value='{"keyname":"CAPCHA_GENERICO2025","fallback":"true","orgId":"00Do0000000b6Io","ts":""}'>
@@ -869,7 +881,7 @@
                                         </div>
 
                                         <div class="d-flex row">
-                                            <label class="input-info-save mb-0 d-flex align-items-center">
+                                            <label class=" mb-0 d-flex align-items-center">
                                                 <input type="checkbox" class="form-check-input me-2" id="aviso"
                                                     name="aviso">
                                                 <a href="https://javer.com.mx/avisos-de-privacidad">Acepto Políticas de
@@ -898,7 +910,7 @@
 
                                         <div class="btn-wrapper mt-4">
                                             <button
-                                                class="btn popup-btn popup-btn-tour theme-btn-1  text-uppercase w-100"
+                                                class="btn popup-btn popup-btn-planos w-100  text-uppercase w-100  text-uppercase w-100"
                                                 type="submit">Solicitar Información <i
                                                     class="fa-solid fa-paper-plane"></i></button>
                                         </div>
@@ -910,7 +922,18 @@
                             </div>
 
 
+
+
                         </div>
+                    </div>
+                    <div class="row d-flex justify-right ">
+                        <div class="col-12 d-flex justify-content-end ">
+                            <img src="./img/Pleca-Tenemos-La-Llave.webp" alt="Logo amaire"
+                                class="img-fluid pleca-javer ">
+                        </div>
+                        <!-- <div class="col-6 text-end">
+                                    <img src="./img/logo-amaire.webp" alt="Logo Derecha" class="img-fluid logo-altai ">
+                                </div> -->
                     </div>
                 </div>
             </div>
@@ -919,10 +942,75 @@
     </div>
 
 
+
+    <!-- =======================================
+  SECCIÓN: INTRODUCCIÓN
+======================================= -->
+    <section id="intro" class="modelos-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class=" text-left ">
+                        <!-- <h6 class="section-subtitle section-subtitle-2--- ltn__secondary-color">Our Aminities</h6> -->
+                        <h1 id="titulo-modelos" class="section-title">Amairé</h1>
+
+                        <p>Amairé es un excelente proyecto de 3 torres de departamentos ubicados en la zona de mayor
+                            plusvalía de
+                            Monterrey, construido al pie del Cerro de las Mitras, lo que te permite apreciar hermosas
+                            vistas
+                            panorámicas. Cuenta con amenidades de primera para tu comodidad y tranquilidad, además de
+                            contar con el
+                            mejor precio de la zona por m2 de construcción.</p>
+
+                        <div class=" row">
+                            <div class="col-lg-6 col-md-6">
+
+                                <ul>
+                                    <li class="  fs-5 ">Modelo A -
+                                        <span class="font-bold" data-model-price="A">$3,050,000*</span>
+                                    </li>
+                                    <li class=" fs-5 ">Modelo B - <span class="font-bold"
+                                            data-model-price="B">$4,181,000*</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <ul>
+
+                                    <li class="  fs-5 ">Modelo C -
+                                        <span class="font-bold" data-model-price="C">$4,836,000*</span>
+                                    </li>
+                                    <li class=" fs-5 ">Modelo D - <span class="font-bold"
+                                            data-model-price="D">$5,726,000*</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <p>*Se aplican restricciones. Precios
+                                vigentes al <span data-vigencia-fecha></span>.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+
+                    <video controls loop muted autoplay class="w-100" src="video/portada.mp4"></video>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
     <!-- =======================================
   SECCIÓN: MODELOS / DEPARTAMENTOS
 ======================================= -->
-    <section id="modelos" class="modelos-section py-5">
+    <section id="modelos" class="modelos-section pb-5">
         <div class="container">
             <div class="section-title-area ltn__section-title-2--- text-center ">
                 <!-- <h6 class="section-subtitle section-subtitle-2--- ltn__secondary-color">Our Aminities</h6> -->
@@ -2449,6 +2537,17 @@
 
             .gallery-slide-item {
                 padding: 0 5px;
+            }
+
+            .bg-hero {
+                background-position: 40%;
+            }
+
+            .overlay {
+                background: #3f2a567a;
+                padding: 18px;
+                color: white;
+                margin-bottom: 15px;
             }
         }
 
